@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="scripts.js"></script>
+    <nav>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="Website Logo" class="logo">
+            <div class="logo-text">R learning</div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+    <header id="home" style="background-image: url('Designer.png');">
+        <h1>Unlock Your Learning Journey: In-Depth Tutorials and Theories.</h1>
+        <p>Start Learning Today!</p>
+        <button onclick="showAlert()">Learn More</button>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide amazing services.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service" style="background-color: #ff7e5f;">
+                <img src="c-icon.png" alt="C Programming Icon"> 
+                <h3>C Programming Tutorials</h3>
+                <p>Learn the basics and advanced concepts of C programming.</p>
+                <button><a href="c-tutorials.html">Start Learning</a></button>
+            </div>
+            <div class="service" style="background-color: #feb47b;">
+                <img src="py-icon.jpeg" alt="python Programming Icon">
+                <h3>Python Tutorials</h3>
+                <p>Master Python with our comprehensive tutorials.</p>
+                <button><a href="python-tutorials.html">Start Learning</a></button>
+            </div>
+            <div class="service" style="background-color: #86a8e7;">
+                <img src="java.jpeg" alt="java Icon">
+                <h3>Java Tutorials</h3>
+                <p>Get started with Java programming and build robust applications.</p>
+                <button><a href="java-tutorials.html">Start Learning</a></button>
+            </div>
+            <div class="service" style="background-color: #91eae4;">
+                <img src="html.jpeg" alt="html Icon">
+                <h3>HTML Tutorials</h3>
+                <p>Learn how to create web pages using HTML.</p>
+                <button><a href="html-tutorials.html">Start Learning</a></button>
+            </div>
+            <div class="service" style="background-color: #ff7e5f;">
+                <img src="css.jpeg" alt="css Icon">
+                <h3>CSS Tutorials</h3>
+                <p>Style your web pages with CSS.</p>
+                <button><a href="css-tutorials.html">Start Learning</a></button>
+            </div>
+            <div class="service" style="background-color: #feb47b;">
+                <img src="js.jpeg" alt="js Icon">
+                <h3>JavaScript Tutorials</h3>
+                <p>Enhance your web pages with JavaScript.</p>
+                <button><a href="javascript-tutorials.html">Start Learning</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>User Reviews</h2>
+        <div class="review-form">
+          <h3>Leave a Review</h3>
+          <form id="reviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="rating">Rating:</label>
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="1"><label for="star5" title="1 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="2"><label for="star4" title="2 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="4"><label for="star2" title="4 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="5"><label for="star1" title="5 star">★</label>
+            </div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="reviews-container" id="reviewsContainer">
+          <!-- User reviews will be displayed here -->
+        </div>
+        <section class="contact"id="contact"id="contact"></section>
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+              <div class="contact-info">
+                <h3>Address</h3>
+                <p>123 Main St, Anytown, USA 12345</p>
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+                <h3>Email</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+              </div>
+              <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name"><br><br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email"><br><br>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message"></textarea><br><br>
+                  <input type="submit" value="Send">
+                </form>
+              </div>
+            </div>
+          </section>
+    <section class="testimonial">
+        <h2>What Our Clients Say</h2>
+        <p>"This is the best service I've ever used!" - Happy Customer</p>
+    </section>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li>
+                </ul>
+                </div>
+                
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  nav {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* adjust the width as needed */
+    height: 40px; /* adjust the height as needed */
+    margin: 0 1rem; /* add some margin around the logo */
+  }
+  
+  .logo-text {
+    font-size: 18px; /* adjust the font size as needed */
+    font-weight: bold; /* adjust the font weight as needed */
+    margin-left: 10px; /* add some margin between the logo and text */
+  }
+  nav img.logo {
+    width: 20px; /* adjust the width as needed */
+    height: 20px; /* adjust the height as needed */
+    margin: 0 1rem; /* add some margin around the logo */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .service {
+    flex: 1 1 calc(33% - 2rem);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service img {
+    width: 50px;
+    height: 50px;
+    margin: 1rem auto;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service h3 {
+    margin-top: 0;
+  }
+  
+  .service p {
+    margin-bottom: 1rem;
+  }
+  
+  .service button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .service button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  .review {
+    flex: 1 1 calc(33% - 2rem);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  
+  .review p {
+    margin-bottom: 10px;
+  }
+
+  .review-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .review-form h3 {
+    margin-top: 0;
+  }
+  
+  .review-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .review-form .rating {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .review-form .rating input {
+    display: none;
+  }
+  
+  .review-form .rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* adjust the height as needed */
+  }
+  .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: rgb(247, 247, 247); /* light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container {
+    background-color: #9f89cd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  }
+  .contact-info {
+    background-image: url('contact-bg.jpeg'); /* replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* add some padding to make the background image visible */
+  }
+  
+  .contact-info h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    
+  }
+  
+  .contact-info {
+    flex: 1 1 25rem;
+    margin: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    flex: 1 1 25rem;
+    margin: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .contact-form {
+    background-image: url('contact-bg.jpeg'); /* replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* add some padding to make the background image visible */
+  }
+  .contact-form h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: rgb(0, 86, 179);
+    transform: scale(1.05);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    clear: both;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    flex: 1 1 20rem;
+    margin: 1rem;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #007BFF;
+  }
+  
+  .footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .footer-section button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .footer-section button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .footer p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  header {
+    background: url('Designer.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+/* For small screens (e.g. mobile devices) */
+@media only screen and (max-width: 768px) {
+  header {
+    background-size: 100% auto; /* scales the image to fit the width of the screen */
+    background-position: top center; /* centers the image horizontally and aligns it to the top */
+  }
+}
+
+/* For medium screens (e.g. tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    background-size: 100% auto; /* scales the image to fit the width of the screen */
+    background-position: center center; /* centers the image horizontally and vertically */
+  }
+}
+
+/* For large screens (e.g. desktops) */
+@media only screen and (min-width: 1025px) {
+  header {
+    background-size: cover; /* scales the image to cover the entire header */
+    background-position: center center; /* centers the image horizontally and vertically */
+  }
+}
