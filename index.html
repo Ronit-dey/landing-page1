@@ -9,7 +9,6 @@
    
 </head>
 <body>
-    <script src="scripts.js"></script>
     <nav>
         <div class="logo-container">
             <img src="../images/logo.jpeg" alt="Website Logo" class="logo">
@@ -17,13 +16,17 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
-    <header id="home" style="background-image: url('Designer.png');">
+    <header id="home">
+        <video id="background-video" autoplay muted loop>
+            <source src="animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         <h1>Unlock Your Learning Journey: In-Depth Tutorials and Theories.</h1>
         <p>Start Learning Today!</p>
         <button onclick="showAlert()">Learn More</button>
@@ -32,47 +35,7 @@
         <h2>About Us</h2>
         <p>We provide amazing services.</p>
     </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service" style="background-color: #ff7e5f;">
-                <img src="c-icon.png" alt="C Programming Icon"> 
-                <h3>C Programming Tutorials</h3>
-                <p>Learn the basics and advanced concepts of C programming.</p>
-                <button><a href="c-tutorials.html">Start Learning</a></button>
-            </div>
-            <div class="service" style="background-color: #feb47b;">
-                <img src="py-icon.jpeg" alt="python Programming Icon">
-                <h3>Python Tutorials</h3>
-                <p>Master Python with our comprehensive tutorials.</p>
-                <button><a href="python-tutorials.html">Start Learning</a></button>
-            </div>
-            <div class="service" style="background-color: #86a8e7;">
-                <img src="java.jpeg" alt="java Icon">
-                <h3>Java Tutorials</h3>
-                <p>Get started with Java programming and build robust applications.</p>
-                <button><a href="java-tutorials.html">Start Learning</a></button>
-            </div>
-            <div class="service" style="background-color: #91eae4;">
-                <img src="html.jpeg" alt="html Icon">
-                <h3>HTML Tutorials</h3>
-                <p>Learn how to create web pages using HTML.</p>
-                <button><a href="html-tutorials.html">Start Learning</a></button>
-            </div>
-            <div class="service" style="background-color: #ff7e5f;">
-                <img src="css.jpeg" alt="css Icon">
-                <h3>CSS Tutorials</h3>
-                <p>Style your web pages with CSS.</p>
-                <button><a href="css-tutorials.html">Start Learning</a></button>
-            </div>
-            <div class="service" style="background-color: #feb47b;">
-                <img src="js.jpeg" alt="js Icon">
-                <h3>JavaScript Tutorials</h3>
-                <p>Enhance your web pages with JavaScript.</p>
-                <button><a href="javascript-tutorials.html">Start Learning</a></button>
-            </div>
-        </div>
-    </section>
+    
     <section id="reviews">
         <h2>User Reviews</h2>
         <div class="review-form">
@@ -96,7 +59,9 @@
         <div class="reviews-container" id="reviewsContainer">
           <!-- User reviews will be displayed here -->
         </div>
-      
+    </section>
+    <section id ="contact">
+
             <h2>Contact Us</h2>
             <div class="contact-container">
               <div class="contact-info">
