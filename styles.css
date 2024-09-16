@@ -1,82 +1,126 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradientBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
-  
-  nav {
-    background-color: rgba(51, 51, 51, 0.8);
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  100% {
+    background-position: 0% 50%;
   }
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 40px; /* adjust the width as needed */
-    height: 40px; /* adjust the height as needed */
-    margin: 0 1rem; /* add some margin around the logo */
-  }
-  
-  .logo-text {
-    font-size: 18px; /* adjust the font size as needed */
-    font-weight: bold; /* adjust the font weight as needed */
-    margin-left: 10px; /* add some margin between the logo and text */
-  }
-  nav img.logo {
-    width: 20px; /* adjust the width as needed */
-    height: 20px; /* adjust the height as needed */
-    margin: 0 1rem; /* add some margin around the logo */
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #007BFF;
-  }
-  
-  header {
-    background: url('header-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 5rem 1rem;
-    position: relative;
-  }
-  
+}
+
+nav {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px; /* adjust the width as needed */
+  height: 40px; /* adjust the height as needed */
+  margin: 0 1rem; /* add some margin around the logo */
+}
+
+nav img.logo {
+  width: 20px; /* adjust the width as needed */
+  height: 20px; /* adjust the height as needed */
+  margin: 0 1rem; /* add some margin around the logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Add a high z-index to ensure the button is on top of other elements */
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.nav-toggle:hover {
+  background-color: #ccc; /* Add a hover effect to the toggle button */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: #666;
+}
+
+header {
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+}
+
+
   header::before {
     content: '';
     position: absolute;
@@ -205,6 +249,12 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+  }
+  .review-form {
+    background-image: url('contact-bg.jpeg'); /* replace with your image file */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* add some padding to make the background image visible */
   }
   
   .review-form h3 {
